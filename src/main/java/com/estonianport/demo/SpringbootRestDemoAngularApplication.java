@@ -1,4 +1,4 @@
-package com.estonianport.springbootrestdemoangular;
+package com.estonianport.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
