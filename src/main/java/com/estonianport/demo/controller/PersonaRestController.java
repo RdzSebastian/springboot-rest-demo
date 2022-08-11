@@ -22,23 +22,23 @@ public class PersonaRestController {
 	@Autowired
 	private PersonaService personaService;
 	
-	@GetMapping(value = "/find/{id}")
+	@GetMapping(value = "/findPersona/{id}")
 	public Persona find(@PathVariable Long id){
 		return personaService.get(id);
 	}
 
-	@GetMapping(value = "/all")
+	@GetMapping(value = "/allPersona")
 	public List<Persona> getAll(){
 		return personaService.getAll();
 	}
 
-	@PostMapping(value = "/save")
+	@PostMapping(value = "/savePersona")
 	public ResponseEntity<Persona> save(@RequestBody Persona persona) {
 		Persona personaReturn = personaService.save(persona);
 		return new ResponseEntity<Persona>(personaReturn, HttpStatus.OK);
 	}
 	
-	@GetMapping(value = "/delete/{id}")
+	@GetMapping(value = "/deletePersona/{id}")
 	public ResponseEntity<Persona> delete(@PathVariable Long id){
 		Persona persona = personaService.get(id);
 		if(persona != null) {
