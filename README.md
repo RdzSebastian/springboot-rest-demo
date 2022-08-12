@@ -1,1 +1,1 @@
-# springboot-rest-demo-angular
+# springboot-rest-demo
