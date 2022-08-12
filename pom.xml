@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.estonianport</groupId>
-	<artifactId>springboot-rest-demo-angular</artifactId>
+	<artifactId>springboot-rest-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>springboot-rest-demo-angular</name>
+	<name>springboot-rest-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
