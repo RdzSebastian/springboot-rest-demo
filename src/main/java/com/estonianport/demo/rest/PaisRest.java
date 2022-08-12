@@ -1,4 +1,4 @@
-package com.estonianport.demo.controller;
+package com.estonianport.demo.rest;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import com.estonianport.demo.service.PaisService;
 
 @RestController
 @RequestMapping(value = "/rest")
-public class PaisRestController {
+public class PaisRest {
 
 	@Autowired
 	private PaisService paisService;
