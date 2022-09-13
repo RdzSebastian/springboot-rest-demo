@@ -25,9 +25,9 @@ public class Persona {
 	
 	@Column
 	private String apellido;
-	
+
 	@Column
-	private String direccion;
+	private int edad;
 	
 	@ManyToOne
 	@JoinColumn(name = "pais_id")

@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,7 +28,7 @@ public class PersonaRest {
 		return personaService.get(id);
 	}
 
-	@GetMapping(value = "/allPersona")
+	@GetMapping(value = "/allPersonas")
 	public List<Persona> getAll(){
 		return personaService.getAll();
 	}
@@ -38,7 +39,7 @@ public class PersonaRest {
 		return new ResponseEntity<Persona>(personaReturn, HttpStatus.OK);
 	}
 	
-	@GetMapping(value = "/deletePersona/{id}")
+	@DeleteMapping(value = "/deletePersona/{id}")
 	public ResponseEntity<Persona> delete(@PathVariable Long id){
 		Persona persona = personaService.get(id);
 		if(persona != null) {
