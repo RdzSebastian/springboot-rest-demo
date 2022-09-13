@@ -14,27 +14,17 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Persona {
+public class Estado {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column
-	private String nombre;
-	
-	@Column
-	private String apellido;
-	
-	@Column
-	private String direccion;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "pais_id")
 	private Pais pais;
-	
-	@ManyToOne
-	@JoinColumn(name = "estado_id")
-	private Estado estado;
+
+	@Column
+	private String nombre;
 
 }
